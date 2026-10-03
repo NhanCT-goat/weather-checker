@@ -1,4 +1,6 @@
+
 import java.util.Scanner;
+
 public class WeatherSummary {
     /**
      * Reads newline-delimted temperatures from System.in and prints summary
@@ -20,10 +22,7 @@ public class WeatherSummary {
     
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
-      if (!scanner.hasNextDouble()) {
-          System.out.println("No temperatures provided.");
-          return;
-      }
+     
         double firstTemp = scanner.nextDouble();
           // Process the temperature value as needed
         double max = firstTemp; // Initialize max with the first temperature     
@@ -40,9 +39,10 @@ public class WeatherSummary {
 
         // Implement this method!
         // Hint: use Scanner. nextDouble() and hasNextDouble() will be helpful here!
-    System.out.println("Max: " + max);
-    System.out.println("Min: " + min);  
+    
     }
+    System.out.println("Max: " + max);
+    System.out.println("Min: " + min);
   
 }
 }
